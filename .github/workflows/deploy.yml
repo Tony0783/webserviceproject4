@@ -27,5 +27,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_TOKEN }} # 생성한 GitHub Token을 사용하는 부분
+          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY}} # 생성한 GitHub Token을 사용하는 부분
           publish_dir: ./dist
